@@ -1,0 +1,11 @@
+hobbit@ubuntu:~/work/devops$ sudo docker run -d -it --name looper devopsdockeruh/exec_bash_exercise
+38adedba7c8b43b60d552641e8ebd8697cd94dd267c3d0f173da3159fcfc0a1c
+hobbit@ubuntu:~/work/devops$ sudo docker exec -it looper bash
+root@38adedba7c8b:/usr/app# tail -f ./logs.txt
+Wed, 17 Jun 2020 12:42:54 GMT
+Wed, 17 Jun 2020 12:42:57 GMT
+Wed, 17 Jun 2020 12:43:00 GMT
+Wed, 17 Jun 2020 12:43:03 GMT
+Secret message is:
+"Docker is easy"
+
