@@ -1,8 +1,9 @@
 FROM node:10-alpine
-WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN npm install
+
+ENV API_URL=http://localhost:8000
 
 COPY . .
 RUN npm run build
