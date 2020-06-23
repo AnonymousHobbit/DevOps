@@ -1,2 +1,2 @@
-hobbit@ubuntu:~/work/devops/1.11$ sudo docker build -t nodeapp .
+hobbit@ubuntu:~/work/devops/1.11$ sudo docker build -t nodeapp --build-arg API_URL=http://localhost:8000 .
 hobbit@ubuntu:~/work/devops/1.11$ sudo docker run -v $(pwd)/logs.txt:/logs.txt -p 8000:8000 nodeapp
