@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+    db:
+      image: postgres
+      restart: unless-stopped
+      environment:
+        - POSTGRES_PASSWORD=postgres
+      container_name: postgres
+    redis_service:
+      image: "redis:alpine"
+    backend:
+      image: 'backend'
+      ports:
+        - 8000:8000
+      volumes:
+        - ./logs.txt:/usr/app/logs.txt
+      environment:
+        - REDIS=redis_service
+        - DB_HOST=db
+        - DB_USERNAME=postgres
+        - DB_PASSWORD=postgres
+    frontend:
+      image: 'frontend'
+      ports:
+        - 5000:5000

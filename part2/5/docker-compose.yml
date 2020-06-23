@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+    redis_service:
+      image: "redis:alpine"
+    backend:
+      image: 'backend'
+      ports:
+        - 8000:8000
+      volumes:
+        - ./logs.txt:/usr/app/logs.txt
+      environment:
+        - REDIS=redis_service
+    frontend:
+      image: 'frontend'
+      ports:
+        - 5000:5000
