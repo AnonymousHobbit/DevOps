@@ -1,0 +1,2 @@
+This environment allows node.js web development, since it includes nodejs, nginx and nmap. Currently my favorite environment for developing.
+https://hub.docker.com/r/anonymoushobbit/dev-env/tags?page=1&ordering=latest
