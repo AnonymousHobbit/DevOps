@@ -1,0 +1,1 @@
+New backend api url environment variable to the frontend service in docker-compose.yml
