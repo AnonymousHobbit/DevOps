@@ -1,0 +1,44 @@
+version: '3.5'
+
+services:
+
+    nginx:
+      image: nginx
+      volumes:
+        - ./nginx.conf:/etc/nginx/nginx.conf
+      ports:
+        - 80:80
+
+    db:
+      image: postgres
+      restart: unless-stopped
+      environment:
+        - POSTGRES_PASSWORD=postgres
+      volumes:
+        - ./db-data:/var/lib/postgresql/data
+      container_name: postgres
+
+    redis_service:
+      image: "redis:alpine"
+      restart: unless-stopped
+      volumes:
+        - ./redis-data:/data
+
+    backend:
+      build:
+        context: ../../part1/11
+      image: 'backend'
+      volumes:
+        - ./logs.txt:/usr/app/logs.txt
+      environment:
+        - REDIS=redis_service
+        - DB_HOST=db
+        - DB_USERNAME=postgres
+        - DB_PASSWORD=postgres
+
+    frontend:
+      build:
+        context: ../../part1/10
+      image: 'frontend'
+      environment:
+        - API_URL=http://localhost/api/
