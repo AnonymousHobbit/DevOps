@@ -1,0 +1,8 @@
+Optimized dockerfile from exercise 1.14
+Before:
+  362MB
+After:
+  347MB
+
+What I did:
+  Connected all RUN commands together.

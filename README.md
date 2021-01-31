@@ -38,3 +38,13 @@ PART 2<br />
 [2.8](https://github.com/AnonymousHobbit/DevOps/tree/master/part2/8/docker-compose.yml)<br />
 [2.9](https://github.com/AnonymousHobbit/DevOps/tree/master/part2/9/docker-compose.yml)<br />
 [2.10](https://github.com/AnonymousHobbit/DevOps/tree/master/part2/10)<br />
+
+PART 3<br />
+[3.1](https://github.com/AnonymousHobbit/DevOps/tree/master/part3/1)<br />
+[3.2](https://github.com/AnonymousHobbit/DevOps/tree/master/part3/2)<br />
+[3.3](https://github.com/AnonymousHobbit/DevOps/tree/master/part3/3)<br />
+[3.4](https://github.com/AnonymousHobbit/DevOps/tree/master/part3/4)<br />
+[3.5](https://github.com/AnonymousHobbit/DevOps/tree/master/part3/5)<br />
+[3.6](https://github.com/AnonymousHobbit/DevOps/tree/master/part3/6)<br />
+[3.7](https://github.com/AnonymousHobbit/DevOps/tree/master/part3/7)<br />
+SKIPPED EXERCISE 3.8<br />

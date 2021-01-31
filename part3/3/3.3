@@ -1,0 +1,7 @@
+IMPORTANT
+ - Edit the installer.sh with your github repo, dockerhub username, tag, dockerhub repo. 
+
+Commands to execute:
+
+$ sudo docker build -t pusher .
+$ sudo docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock pusher

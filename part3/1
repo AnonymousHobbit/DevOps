@@ -1,0 +1,12 @@
+FRONTEND:
+Before optimization:
+  332B
+After optimization:
+  332MB
+
+BACKEND:
+Before optimization:
+  121MB
+After optimization:
+  121MB
+  
