@@ -1,4 +1,4 @@
-# DevOps
+# Repository is for Devops with docker course in University of Helsinki
 ## Exercises
 PART 1<br />
 [1.1](https://github.com/AnonymousHobbit/DevOps/blob/master/part1/1)<br />
